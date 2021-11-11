@@ -14,7 +14,9 @@
     <name>mssc-brewery-client</name>
     <description>mssc-brewery-client</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
+        <maven-compiler-source>11</maven-compiler-source>
+        <maven-comipler-targer>11</maven-comipler-targer>
     </properties>
     <dependencies>
         <dependency>
@@ -25,6 +27,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpasyncclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpasyncclient</artifactId>
+            <version>4.1.4</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.projectlombok</groupId>
