@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor;
 
-//@Component
+@Component
 public class NonBlockingNIORestTemplateCustomizer implements RestTemplateCustomizer {
     public ClientHttpRequestFactory clientHttpRequestFactory() throws IOReactorException {
         DefaultConnectingIOReactor reactor= new DefaultConnectingIOReactor(
